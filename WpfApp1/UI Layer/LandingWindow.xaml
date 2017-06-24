@@ -7,7 +7,14 @@
         mc:Ignorable="d"
         Title="Welcome" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,27,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="216,27,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Surname" HorizontalAlignment="Left" Margin="216,79,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="70,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date of Birth" HorizontalAlignment="Left" Margin="216,134,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="70,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Contact number" HorizontalAlignment="Left" Margin="216,196,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
