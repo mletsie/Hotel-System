@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfApp1.UI_Layer
 {
     /// <summary>
-    /// Interaction logic for Register.xaml
+    /// Interaction logic for RegisterWindow.xaml
     /// </summary>
-    public partial class Register : Window
+    public partial class RegisterWindow : Window
     {
-        public Register()
+        public RegisterWindow()
         {
             InitializeComponent();
         }

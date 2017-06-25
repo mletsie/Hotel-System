@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace WpfApp1.UI_Layer
 {
     /// <summary>
-    /// Interaction logic for LandingWindow.xaml
+    /// Interaction logic for Landing.xaml
     /// </summary>
     public partial class LandingWindow : Window
     {
         public LandingWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

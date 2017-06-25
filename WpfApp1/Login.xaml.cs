@@ -28,7 +28,8 @@ namespace WpfApp1
     {
         private Login login;
         private LandingWindow landingwindow;
-        
+        private RegisterWindow registerwindow;
+             
         public MainWindow()
         {
             InitializeComponent();
@@ -70,7 +71,9 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            this.Hide();
+            registerwindow = new RegisterWindow();
+            registerwindow.Show();
         }
     }
 }
