@@ -23,5 +23,10 @@ namespace WpfApp1.UI_Layer
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
