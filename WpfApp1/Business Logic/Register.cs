@@ -18,7 +18,7 @@ namespace WpfApp1.Business_Logic
         public int individualRegister(string name, string surname, string dob, string email, string number, string password)
         {
             string command = "INSERT INTO individual (Name, Surname, DateOfBirth, Email, ContactNumber, Password) VALUES (" + 
-                name + "," + surname + "," + "1958/09/01" + "," + email + "," + number + "," + password + ");";
+                name + "," + surname + "," + "1958/09/01" + "," + "tsepo@mail.com" + "," + number + "," + password + ");";
 
             try
             {
