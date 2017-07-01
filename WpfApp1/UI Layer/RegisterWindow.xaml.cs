@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Business_Logic;
+using WpfApp1.UI_Layer;
 
 namespace WpfApp1.UI_Layer
 {
@@ -19,6 +21,9 @@ namespace WpfApp1.UI_Layer
     /// </summary>
     public partial class RegisterWindow : Window
     {
+        private Register register;
+        private LandingWindow landingwindow;
+
         public RegisterWindow()
         {
             InitializeComponent();
@@ -26,7 +31,31 @@ namespace WpfApp1.UI_Layer
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            int registersuccess;
+            try
+            {
+                register = new Register();
+                registersuccess = register.individualRegister(NameTextbox.Text, SurnameTextbox.Text, DateOfBirthPicker.SelectedDate.Value.ToString(), EmailTextBox.Text, ContactTextbox.Text, PasswordTextbox.Password);
 
+                if (registersuccess == 1)
+                {
+                    this.Hide();
+                    landingwindow = new LandingWindow();
+                    landingwindow.Show();
+                }
+                else if (registersuccess == 0)
+                {
+                    MessageBox.Show("There was an error registering");
+                }
+                else
+                {
+                    MessageBox.Show("Unknown error");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
     }
 }

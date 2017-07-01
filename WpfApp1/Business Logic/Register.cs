@@ -15,6 +15,25 @@ namespace WpfApp1.Business_Logic
     {
         private DBconnect db;
 
+        public int individualRegister(string name, string surname, string dob, string email, string number, string password)
+        {
+            string command = "INSERT INTO individual (Name, Surname, DateOfBirth, Email, ContactNumber, Password) VALUES (" + 
+                name + "," + surname + "," + "1958/09/01" + "," + email + "," + number + "," + password + ");";
 
+            try
+            {
+                db = new DBconnect();
+                db.openConnection();
+                MySqlCommand cmd = new MySqlCommand(command, db.connection);
+                cmd.ExecuteNonQuery();
+                db.closeConnection();
+                return 1;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return 0;
+            }
+        }
     }
 }
