@@ -45,9 +45,9 @@ namespace WpfApp1
 
                 if(loginsuccess == 1)
                 {
-                    this.Hide();
                     landingwindow = new LandingWindow();
                     landingwindow.Show();
+                    this.Close();
                 }
                 else if (loginsuccess == 2)
                 {
@@ -71,9 +71,9 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Hide();
             registerwindow = new RegisterWindow();
             registerwindow.Show();
+            this.Close();
         }
     }
 }

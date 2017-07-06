@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.UI_Layer"
         mc:Ignorable="d"
-        Title="Welcome" Height="300" Width="300">
+        Title="Welcome" Height="363" Width="562" MaxHeight="363" MaxWidth="562" WindowStartupLocation="CenterScreen">
     <Grid>
         
     </Grid>

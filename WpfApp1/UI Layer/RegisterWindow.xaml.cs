@@ -23,6 +23,7 @@ namespace WpfApp1.UI_Layer
     {
         private Register register;
         private LandingWindow landingwindow;
+        private MainWindow loginwindow;
 
         public RegisterWindow()
         {
@@ -51,6 +52,41 @@ namespace WpfApp1.UI_Layer
                 {
                     MessageBox.Show("Unknown error");
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.NameTextbox.Clear();
+                this.SurnameTextbox.Clear();
+                this.DateOfBirthPicker.SelectedDate = null;
+                this.EmailTextBox.Clear();
+                this.ContactTextbox.Clear();
+                loginwindow = new MainWindow();
+                loginwindow.Show();
+                this.Close();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.NameTextbox.Clear();
+                this.SurnameTextbox.Clear();
+                this.DateOfBirthPicker.SelectedDate = null;
+                this.EmailTextBox.Clear();
+                this.ContactTextbox.Clear();
             }
             catch (Exception ex)
             {
