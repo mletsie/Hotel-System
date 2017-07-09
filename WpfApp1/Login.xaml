@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Login" Height="350" Width="525" MaxHeight="350" MaxWidth="525" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox Name="Username" HorizontalAlignment="Left" Height="23" Margin="183,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
-        <PasswordBox Name="Password" HorizontalAlignment="Left" Margin="183,108,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="180">
+        <TextBox Name="Username" HorizontalAlignment="Left" Height="23" Margin="183,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <PasswordBox Name="Password" HorizontalAlignment="Left" Margin="183,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="180">
             <PasswordBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -18,8 +18,9 @@
                 </TransformGroup>
             </PasswordBox.RenderTransform>
         </PasswordBox>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="183,150,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Cursor="Hand"/>
-        <Button Content="Register" HorizontalAlignment="Left" Margin="183,189,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Cursor="Hand"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="183,228,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Cursor="Hand"/>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="183,267,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Cursor="Hand"/>
+        <Image HorizontalAlignment="Left" Height="128" Margin="183,10,0,0" VerticalAlignment="Top" Width="193" Source="Images/Logo1.png"/>
 
     </Grid>
 </Window>
