@@ -35,12 +35,12 @@ namespace WpfApp1.UI_Layer
             try
             {
                 register = new Register();
-                registersuccess = register.individualRegister(NameTextbox.Text, SurnameTextbox.Text, DateOfBirthPicker.SelectedDate.Value.ToString(), EmailTextBox.Text, ContactTextbox.Text, PasswordTextbox.Password);
+                registersuccess = register.individualRegister(NameTextbox.Text, SurnameTextbox.Text, DateOfBirthPicker.SelectedDate.Value.ToShortDateString(), EmailTextBox.Text, ContactTextbox.Text, PasswordTextbox.Password);
 
                 if (registersuccess == 1)
                 {
                     this.Hide();
-                    landingwindow = new LandingWindow();
+                    landingwindow = new LandingWindow("Successfully Registered", 2);
                     landingwindow.Show();
                 }
                 else if (registersuccess == 0)

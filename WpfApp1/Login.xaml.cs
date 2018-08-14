@@ -46,7 +46,7 @@ namespace WpfApp1
                 if(loginsuccess == 1)
                 {
                     this.Hide();
-                    landingwindow = new LandingWindow();
+                    landingwindow = new LandingWindow("Login Successful", 1);
                     landingwindow.Show();
                 }
                 else if (loginsuccess == 2)

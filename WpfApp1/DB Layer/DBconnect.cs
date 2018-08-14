@@ -28,13 +28,13 @@ namespace WpfApp1.DB_Layer
 
         private void Initialize()
         {
-            server = "localhost";
-            database = "hotel";
-            uid = "root";
-            password = "password";
+            //server = "localhost";
+            //database = "hotel";
+            //uid = "root";
+            //password = "password";
 
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-
+            //connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + "SslMode=none" + ";";
+            connectionString = "server=localhost; user id=root; password=password; persistsecurityinfo=True; database=hotel; SslMode=none;";
             connection = new MySqlConnection(connectionString);
         }
 

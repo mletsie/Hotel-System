@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Business_Logic;
+using WpfApp1.UI_Layer;
 
 namespace WpfApp1.UI_Layer
 {
@@ -19,9 +21,39 @@ namespace WpfApp1.UI_Layer
     /// </summary>
     public partial class LandingWindow : Window
     {
-        public LandingWindow()
+        private MainWindow loginpage;
+        private WelcomeWindow welcome;
+
+        public LandingWindow(string message, int button)
         {
             InitializeComponent();
+            MyLabel.Content = message;
+
+            if(button == 1)
+            {
+                MyButton.Content = "Main Page";
+                MyButton.Click += MyButton_Click;
+            }
+            if(button == 2)
+            {
+                MyButton.Content = "Login";
+                MyButton.Click += MyButton_Click1;
+            }
+        }
+
+        private void MyButton_Click1(object sender, RoutedEventArgs e)
+        {
+            //throw new NotImplementedException();
+            this.Hide();
+            loginpage = new MainWindow();
+            loginpage.Show();
+        }
+
+        private void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            welcome = new WelcomeWindow();
+            welcome.Show();
         }
     }
 }
